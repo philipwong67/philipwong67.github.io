@@ -1,37 +1,96 @@
 <html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 	<style>
 		body{
 			background: #1A1A1A;
 			color: #FAFAFA;
+			font-family: 'Poppins', sans-serif;
+			display: flex;
+			align-items: center;
+  justify-content: center;
 		}
 
-		h1{
+		* {
 			font-size: 1em;
 			line-height: 1.5;
+			margin: 0;
 		}
 
 		a {
 			color: #FFE600;
 		}
 
-	</style>
+		.container {
+			width:  280px;
+			margin:  20px;
+		}
 
-	<img 
+		.links-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		hr {
+			margin:  32px 0;
+			border-bottom-width: 0px;
+    color: #FAFAFA;
+		}
+
+.img-container {display: flex; justify-content: left; margin-bottom: 32px;}
+
+
+
+a span{text-decoration: none;display: inline-block;}
+
+	</style>
+	<div class="container">
+	<div class="img-container">
+		<img 
 		alt="Philip Wong thumbnail" 
 		height="120" 
-		src="/img/profile.png" 
+		src="img/profile.png" 
 		width="120" 
+		class="center"
 	/>
+</div>
+
 	<h1>
-		👋 Hello,</br>
-		I’m Philip Wong, a product designer in Vancouver. I solve billing & collections problems for legal professionals <a href="https://www.clio.com">@Clio</a>.
+		👋 Hello. </br></br>I’m Philip, a product designer in Vancouver. I currently solve billing & collections problems for legal professionals <a href="https://www.clio.com"><span>@</span>Clio</a>.
 	</h1>
 <hr>
-<a href="/download/philip-resume.pdf">View resume</a>
-<a href="mailto:pwon67@gmail.com">Email me</a>
-<a href="https://www.linkedin.com/in/philipwong67
+<div class="links-container">
+<style>
+	.resume {
+		background: url("img/download.svg");
+		background-repeat: no-repeat;
+		padding-left:  36px;
+		margin-bottom: 8px;
+
+	}
+
+	.linkedin {
+		background: url("img/linkedin.svg");
+		background-repeat: no-repeat;
+		padding-left:  36px;
+		margin-bottom:  8px;
+	}
+
+	.email {
+		background: url("img/email.svg");
+		background-repeat: no-repeat;
+		padding-left:  36px;
+
+
+	}
+</style>
+<a class="resume" href="/download/philip-resume.pdf">View resume</a>
+<a class="linkedin" href="https://www.linkedin.com/in/philipwong67
 ">Linkedin Profile</a>
+<a class="email" href="mailto:pwon67@gmail.com">Email me</a>
+</div>
 <hr>
 <p>
 Case studies  
@@ -39,6 +98,7 @@ Case studies
 <p>
 Available Upon request
 </p>
+</div>
 
 
 </html>
