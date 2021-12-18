@@ -28,16 +28,17 @@
 		}
 		a:focus {
 			    outline-color: #FFE500;
-    outline-width: 2px;
-    outline-offset: 2px;
+    outline-width: 1px;
+    outline-offset: 1px;
     outline-style: solid;
 		}
 
 		.container {
 			width:  280px;
-			padding: 32px;
+			padding: 32px 32px 24px;
 			border:  1px solid #2a2a2a;
 			border-radius: 16px;
+			box-shadow: 20px 20px 120px #0E0D0D;
 
 		}
 
@@ -47,14 +48,19 @@
 		}
 
 		hr {
-			margin:  32px 220px 32px 0;
+			margin:  32px 210px 24px 0;
 			border-bottom-width: 0px;
     color: #FAFAFA;
 		}
 
 .img-container {display: flex; justify-content: left; margin-bottom: 32px;}
 
-
+a.clio:focus {
+	background-color: #2a2a2a;
+	padding: 2px 4px;
+	margin-left: -4px;
+	margin-right: -4px;
+}
 
 a {border-radius: 8px}
 
@@ -71,7 +77,7 @@ a {border-radius: 8px}
 </div>
 
 	<h1>
-		👋 Hello. </br></br>I’m Philip, a product designer in Vancouver. I currently solve billing & collections problems for legal professionals at <a href="https://www.clio.com">Clio</a>.
+		👋 Hello. </br></br>I’m Philip, a product designer in Vancouver. I currently solve billing & collections problems for legal professionals at <a class="clio" href="https://www.clio.com">Clio</a>.
 	</h1>
 <hr>
 <div class="links-container">
