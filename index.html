@@ -6,140 +6,149 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+				<style>
+			body{
+				background: #1A1A1A url('img/bg.png');
+				color: #FAFAFA;
+			}
+
+			.shadow-container{
+		    align-items: center;
+		    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 60%, rgba(13,13,13,1) 100%);
+		    display: flex;
+				height: 100vh;
+				justify-content: center;
+				width:  100vw;
+			}
+
+			.content-container {
+				background: #1A1A1A;
+				border: 1px solid #2a2a2a;
+				border-radius: 16px;
+				box-shadow: 20px 20px 240px #000000;
+				padding: 32px 32px 24px;
+				position: relative;
+				width: 280px;	
+			}
+
+			.content-container:before {
+				background: url("img/graphic-2.png");
+				background-size: contain;
+				content: "";
+				height: 80px;
+				left: -98px;
+				position: absolute;
+				top: 56px;
+				width: 158px;
+				z-index: -1;
+			}
+
+			.content-container:after {
+				background: url("img/graphic-1.png");
+				background-repeat:  no-repeat;
+				background-size: contain;
+				bottom: -48px;
+				content: "";
+				height: 120px;
+				right: -98px;
+				position: absolute;
+				width: 126px;
+				z-index: -1;
+			}
+
+			.img-container {
+				margin-bottom: 16px;
+			}
+
+			.img-container img {
+				margin-left: -10px;
+				margin-top: -10px;
+			}
+
+			hr {
+				border: 1px solid #FAFAFA;
+				margin: 32px 210px 24px 0;
+			}
+
+			* {
+				font: 1em/1.5 'Poppins', sans-serif;
+				margin: 0;
+			}
+
+			h1 {
+				font-size:  2em;
+				font-weight: 600;
+			}
+
+			h2{
+				margin-bottom: 32px;
+				font-weight:  300;
+			}
+
+			a {
+				border-radius: 4px;
+				color: #FFE500;
+			}
+
+			a:hover {
+				background-color:  #2A2A2A;
+				margin-left: -4px;
+				margin-right: -4px;
+				padding: 2px 4px;
+			}
+
+			a:focus {
+				background-color: #2a2a2a;
+				margin-left: -4px;
+				margin-right: -4px;
+				outline: 1px solid #FFE500;
+				outline-offset: 1px;
+				padding: 2px 4px;
+			}
+
+			a.links {
+				display: flex;
+				background-repeat: no-repeat;
+				background-position: 12px center;
+				margin-left: -12px;
+				margin-right:  -12px;
+				padding: 8px 12px 8px 48px;
+			}
+
+			a.links:hover {
+				margin-left: -12px;
+				margin-right:  -12px;
+				padding: 8px 12px 8px 48px;
+			}
+
+			a.resume {
+				background-image: url("img/download.svg");
+			}
+	
+			a.linkedin {
+				background-image: url("img/linkedin.svg");
+			}
+
+			a.email {
+				background-image: url("img/email.svg");
+			}
+		</style>
 	</head>
-		
-		<style>
-		body{
-			background: #1A1A1A;
-			color: #FAFAFA;
-			font-family: 'Poppins', sans-serif;
-			display: flex;
-			align-items: center;
-  justify-content: center;
-		}
-
-		* {
-			font-size: 1em;
-			line-height: 1.5;
-			margin: 0;
-		}
-
-		h1 {
-			font-size:  2em;
-			font-weight: 600;
-		}
-
-		h2{
-			margin-bottom: 32px;
-			font-weight:  300;
-		}
-
-		a {
-			color: #FFE500;
-		}
-
-		a:hover {
-			background-color:  #2a2a2a;
-		}
-		a:focus {
-			    outline-color: #FFE500;
-    outline-width: 1px;
-    outline-offset: 1px;
-    outline-style: solid;
-		}
-
-		.container {
-			width:  280px;
-			padding: 32px 32px 24px;
-			border:  1px solid #2a2a2a;
-			border-radius: 16px;
-			box-shadow: 20px 20px 120px #000000;
-
-		}
-
-		.links-container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		hr {
-			margin:  32px 210px 24px 0;
-			border: 1px solid #FAFAFA;
-		}
-
-.img-container {margin-bottom: 16px;}
-
-a.clio:hover {
-	padding: 2px 4px;
-	margin-left: -4px;
-	margin-right: -4px;
-}
-
-a.clio:focus {
-	background-color: #2a2a2a;
-	padding: 2px 4px;
-	margin-left: -4px;
-	margin-right: -4px;
-}
-
-a {border-radius: 4px}
-
-	</style>
-	<div class="container">
-	<div class="img-container">
-		<img 
-		alt="Philip Wong thumbnail" 
-		height="104" 
-		src="img/profile.png" 
-		width="104" 
-		class="center"
-	/>
-</div>
-	<h1>
-		Philip Wong 
-	</h1>
-	<h2>Product Designer</h2>
-	<p>
-		I'm currently solving billing & collections problems for legal professionals at <a class="clio" href="https://www.clio.com">Clio</a>.
-	</p>
-<hr>
-<div class="links-container">
-<style>
-	.resume, .linkedin, .email {
-		background-image: url("img/download.svg");
-		background-repeat: no-repeat;
-		background-position-y: center;
-
-		background-position-x: 12px;
-		padding: 8px 12px 8px 48px;
-	border-radius: 8px;
-	margin-left: -12px;
-		margin-right:  -12px;
-	}
-
-	.resume:hover, .linkedin:hover, .email:hover   {
-		background-color: #2a2a2a;
-		
-	}
-
-	.linkedin {
-		background-image: url("img/linkedin.svg");
-
-	}
-
-	.email {
-		background-image: url("img/email.svg");
-
-
-
-	}
-</style>
-<a class="resume" href="/download/philip-resume.pdf">View resume</a>
-<a class="linkedin" href="https://www.linkedin.com/in/philipwong67
-">Linkedin Profile</a>
-<a class="email" href="mailto:pwon67@gmail.com">Email me</a>
-</div>
-</div>
-
+	<div class="shadow-container">
+		<div class="content-container">
+			<div class="img-container">
+				<img alt="Philip Wong thumbnail" height="124" src="img/profile.png" width="124" />
+			</div>
+			<h1>Philip Wong</h1>
+			<h2>Product Designer</h2>
+			<p>
+				I'm currently solving billing & collections problems for legal professionals at <a href="https://www.clio.com">Clio</a>.
+			</p>
+			<hr>
+			<a class="links resume" href="download/philip-resume.pdf">View Resume</a>
+			<a class="links linkedin" href="https://www.linkedin.com/in/philipwong67">View Linkedin</a>
+			<a class="links email" href="mailto:pwon67@gmail.com">Email Me</a>
+		</div>
+	</div>
 
 </html>
