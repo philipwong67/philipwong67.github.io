@@ -54,10 +54,12 @@
 			}
 
 			.img-container {
+				display: flex;
+				justify-content: space-between;
 				margin-bottom: 16px;
 			}
 
-			.img-container img {
+			.img-container .profile {
 				margin-left: -16px;
 				margin-top: -16px;
 			}
@@ -80,6 +82,10 @@
 			h2{
 				margin-bottom: 32px;
 				font-weight:  300;
+			}
+
+			p {
+				margin-bottom: 24px;
 			}
 
 			a {
@@ -149,18 +155,21 @@
 			  	display: none;
 			  } 
 			}
-
 		</style>
 	</head>
 	<body>
 		<div class="content-container">
 			<div class="img-container">
-				<img alt="Philip Wong thumbnail" height="124" src="img/profile.png" width="124" />
+				<img alt="Philip Wong thumbnail" class="profile" height="124" src="img/profile.png" width="124" />
+				<img alt="Canadian" height="32" src="img/canadian-flag.png" width="32" />
 			</div>
 			<h1>Philip Wong</h1>
 			<h2>Product Designer</h2>
 			<p>
 				I'm currently solving billing & collections problems for legal professionals at <a href="https://www.clio.com">Clio</a>.
+			</p>
+			<p>
+				Case studies upon request.
 			</p>
 			<hr>
 			<a class="links resume" href="download/philip-wong-resume.pdf">View Resume</a>
