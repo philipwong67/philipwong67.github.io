@@ -26,9 +26,9 @@
 				border: 1px solid #2a2a2a;
 				border-radius: 16px;
 				box-shadow: 20px 20px 240px #000000;
+				max-width: 280px;
 				padding: 32px 32px 24px;
 				position: relative;
-				width: 280px;	
 			}
 
 			.content-container:before {
@@ -36,9 +36,9 @@
 				background-size: contain;
 				content: "";
 				height: 80px;
-				left: -98px;
+				left: -80px;
 				position: absolute;
-				top: 56px;
+				top: 48px;
 				width: 158px;
 				z-index: -1;
 			}
@@ -55,6 +55,8 @@
 				width: 126px;
 				z-index: -1;
 			}
+
+			
 
 			.img-container {
 				margin-bottom: 16px;
@@ -132,6 +134,26 @@
 			a.email {
 				background-image: url("img/email.svg");
 			}
+
+			@media screen and (max-width: 400px) {
+				.shadow-container {
+			    align-items: flex-start;
+			    padding-top: 16px;
+			  }
+
+				.content-container {
+					background: none;
+					border: none;
+					box-shadow: none;
+				}
+
+				.content-container:after {
+					right:  -12px;
+				}
+
+			}
+
+
 		</style>
 	</head>
 	<div class="shadow-container">
@@ -145,7 +167,7 @@
 				I'm currently solving billing & collections problems for legal professionals at <a href="https://www.clio.com">Clio</a>.
 			</p>
 			<hr>
-			<a class="links resume" href="download/philip-resume.pdf">View Resume</a>
+			<a class="links resume" href="download/philip-wong-resume.pdf">View Resume</a>
 			<a class="links linkedin" href="https://www.linkedin.com/in/philipwong67">View Linkedin</a>
 			<a class="links email" href="mailto:pwon67@gmail.com">Email Me</a>
 		</div>
