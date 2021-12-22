@@ -131,8 +131,20 @@
 
 			@media only screen and (max-width: 600px) {
 			  body {
-			    background-color: white;
+			    display: block;
+			    background-color: red;
 			  }
+
+			  .content-container {
+			  	margin: 0 auto;
+			  	background: none;
+			  	border: 0px;
+			  }
+
+			  .content-container:after,
+			  .content-container:before{
+			  	display: none;
+			  } 
 			}
 
 
