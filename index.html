@@ -9,13 +9,12 @@
 		<style>
 
 			body{
+				align-items: center;
 				background: #1A1A1A url('img/bg.png');
 				box-shadow: inset 0 0 360px 40px rgb(20 20 20);
 				color: #FAFAFA;
-				align-items: center;
 		    display: flex;
 				justify-content: center;
-		
 			}
 
 			.content-container {
@@ -52,8 +51,6 @@
 				width: 126px;
 				z-index: -1;
 			}
-
-			
 
 			.img-container {
 				margin-bottom: 16px;
@@ -132,23 +129,10 @@
 				background-image: url("img/email.svg");
 			}
 
-			@media screen and (max-device-width: 400px) {
-				body {
-			    padding-top: 16px;
-			    display: block;
+			@media only screen and (max-width: 600px) {
+			  body {
+			    background-color: white;
 			  }
-
-				.content-container {
-					background: none;
-					border: none;
-					box-shadow: none;
-					margin: 16px auto;
-				}
-
-				.content-container:after,
-				.content-container:before {
-					display: none;
-				}
 			}
 
 
