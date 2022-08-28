@@ -3,7 +3,7 @@
 	<head>
 		<title>Philip Wong | Product Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👀</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👀q</text></svg>">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +13,13 @@
 			body{
 				align-items: center;
 				background: #1A1A1A;
-				color: #FAFAFA;
+				color: #888888;
 		    display: flex;
 				justify-content: center;
 			}
 
 			.content-container {
-				max-width: 320px;
-				margin-top: -32px;
+				max-width: 360px;
 			}
 
 			.img-container {
@@ -43,15 +42,13 @@
 			h2{
 				font-weight:  300;
 				margin-bottom: 32px;
-				color: #888;
 			}
 
 			p {
-				margin-bottom:  32px;
+				margin-bottom:  16px;
 			}
 
 			footer{
-				color:  #888;
 				font-size: .75em;
 			}
 			a {
@@ -74,15 +71,15 @@
 				bottom: -1px;
 				left:  0;
 				right:  0;
-				border-bottom:  3px solid #FFE500;
+				border-bottom:  3px solid #FFD500;
 			} 
 
 			a:focus {
-				outline: 1px solid #FFE500;
+				outline: 1px solid #FFD500;
 				outline-offset: 2px;
 				}
 
-			a.resume {
+			.margin-l-bottom {
 				margin-bottom: 32px;
 			}
 			
@@ -95,16 +92,41 @@
 				border-radius: 16px;
 			}
 
-			a.footer-link:hover:after{
-				border-bottom:  none;
+			a.footer-link:hover:after,
+			a.footer-link:focus:after{
+				background: #FFD500;
+		    border-bottom: none;
+		    border-radius: 4px;
+		    font-size: .75em;
+		    font-weight: 600;
+				height: 12px;
+		    line-height: .75em;
+				padding: 6px 8px 3px;
+		    position: absolute;
+    		top: -28px;
+    	}
+
+			a.email:hover:after,
+			a.email:focus:after {
+				content: 'Email';
+				left: -26%;
+				right: -30%;
+			}
+
+			a.linkedin:hover:after,
+			a.linkedin:focus:after {
+				content: 'LinkedIn';
+				left: -50%;
+				right: -57%;
+    
 			}
 
 			a.footer-link:hover svg path{
-				fill: #FFE500;
+				fill: #FFD500;
 			}
 
 			a.footer-link:hover svg rect{
-				stroke: #FFE500;
+				stroke: #FFD500;
 			}
 
 
@@ -131,15 +153,18 @@
 			<p>
 				I currently work at <a href="https://www.grammarly.com/" target="_blank">Grammarly</a> to shape the future of communication.
 			</p>
+			<p class="margin-l-bottom">
+				Previously I was solving billing &amp; collections problems for legal professionals at <a href="https://www.clio.com" target="_blank">Clio</a> to transform the legal experience for all.
+			</p>
 			<div class="icons-container">
-				<a class="footer-link" href="mailto:pwon67@gmail.com">
+				<a class="footer-link email" href="mailto:pwon67@gmail.com">
 					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M20.8 11H11.2C10.54 11 10.006 11.5625 10.006 12.25L10 19.75C10 20.4375 10.54 21 11.2 21H20.8C21.46 21 22 20.4375 22 19.75V12.25C22 11.5625 21.46 11 20.8 11ZM20.56 13.6562L16.318 16.4188C16.126 16.5438 15.874 16.5438 15.682 16.4188L11.44 13.6562C11.29 13.5563 11.2 13.3875 11.2 13.2063C11.2 12.7875 11.638 12.5375 11.98 12.7562L16 15.375L20.02 12.7562C20.362 12.5375 20.8 12.7875 20.8 13.2063C20.8 13.3875 20.71 13.5563 20.56 13.6562Z" fill="#888888"/>
 						<rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#888888"/>
 					</svg>
 				</a>
 
-				<a class="footer-link" href="https://www.linkedin.com/in/philipwong67">
+				<a class="footer-link linkedin" href="https://www.linkedin.com/in/philipwong67">
 					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M10 20.8136V12.8826H12.5691V20.8136H10Z" fill="#888888"/>
 						<path d="M10 10.3699C10 9.59229 10.5746 9 11.4535 9C12.3324 9 12.8736 9.59229 12.8903 10.3699C12.8903 11.1314 12.3324 11.7408 11.4365 11.7408H11.4201C10.5576 11.7408 10 11.1314 10 10.3699Z" fill="#888888"/>
@@ -148,7 +173,7 @@
 					</svg>
 				</a>
 			</div>
-			<a class="links resume" href="download/philip-wong-resume.pdf">View Resume</a>
+			<a class="links resume margin-l-bottom" href="download/philip-wong-resume.pdf">View Resume</a>
 			<footer>Last Update: April 2022</footer>
 		</div>
 	</body>
