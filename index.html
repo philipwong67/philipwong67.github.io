@@ -17,9 +17,19 @@
 		    	display: flex;
 				justify-content: center;
 				text-align:center;
+				flex-direction: column;
 			}
 
 			.content-container {
+				width:100vw;
+				height:100vh;
+				align-content:center;
+			}
+
+			.contact {
+				background:#FCF5F0;
+				color:#1A1A1A;
+				width:100%;
 			}
 
 			* {
@@ -28,6 +38,11 @@
 				font-size:1em;
 				line-height:1em;
 				margin:0;
+			}
+
+			*::selection{
+				background: #FFC400;
+				color:#1a1a1a;
 			}
 
 			h1 {
@@ -42,8 +57,8 @@
 
 			
 			h2, p {
-				font-size:22px;
-				line-height:30px;
+				font-size:24px;
+				line-height:32px;
 				font-weight:100;
 				font-optical-sizing: auto;
 			}
@@ -74,5 +89,11 @@
 			<h2>Product Designer</h2>
 			<p>Ex-Grammarly, Clio and Best Buy Canada</p>
 		</div>
+		<!--<div class="content-container contact">
+			
+			<h1>two</h1>
+			<h2>Product Designer</h2>
+			<p>Ex-Grammarly, Clio and Best Buy Canada</p>
+		</div>-->
 	</body>
 </html>
