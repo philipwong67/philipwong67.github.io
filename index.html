@@ -7,174 +7,72 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=DM+Serif+Display&display=swap" rel="stylesheet">
 		<style>
 
 			body{
 				align-items: center;
-				background: #1A1A1A;
-				color: #888888;
-		    display: flex;
+				background: #0A574E;
+				color: #FCF5F0;
+		    	display: flex;
 				justify-content: center;
-			  padding: 56px 32px;
+				text-align:center;
 			}
 
 			.content-container {
-				max-width: 360px;
-			}
-
-			.img-container {
-				display: flex;
-				justify-content: space-between;
-				margin-bottom: 16px;
 			}
 
 			* {
-				font: 1em/1.5 'Poppins', sans-serif;
-				margin: 0;
+				font-family: 'DM San', sans-serif;
+				font-weight: normal;
+				font-size:1em;
+				line-height:1em;
+				margin:0;
 			}
 
 			h1 {
-				font-size:  40px;
-				font-weight: 600;
-				letter-spacing: -1px;
+				font-size:  8em;
+				font-weight:normal;
+				line-height: 140px;
+				font-family: 'DM Serif Display', serif;
+				letter-spacing: -2px;
+				margin-bottom:32px;
+				margin-top:40px;
+			}
+
+			
+			h2, p {
+				font-size:22px;
+				line-height:30px;
+				font-weight:100;
+				font-optical-sizing: auto;
 			}
 
 			h2{
-				font-weight:  300;
-				margin-bottom: 32px;
+				
+				font-weight: 600;
+				color:#FFC400;
+				letter-spacing:.5px;
 			}
 
-			p {
-				margin-bottom:  16px;
-			}
-
-			footer{
-				font-size: .75em;
-			}
-			a {
-				color: #FFE500;
-				display: inline-block;
-				text-decoration:  none;
-				border-bottom: 1px solid;
-				position: relative;
-				border-radius: 1px;
-			}
-
-			a:hover{
-				color: #FFE500;
-			}
-
-			a:hover:after{
-				content: "";
-				position: absolute;
-				top: 0;
-				bottom: -1px;
-				left:  0;
-				right:  0;
-				border-bottom:  3px solid #FFD500;
-			} 
-
-			a:focus {
-				outline: 1px solid #FFD500;
-				outline-offset: 2px;
-				}
-
-			.margin-l-bottom {
-				margin-bottom: 32px;
-			}
 			
-			a.footer-link {
-				color: #1A1A1A;
-				display: inline-block;
-				margin-right: 4px;
-				margin-bottom: 32px;
-				text-decoration: none;
-				border-radius: 16px;
-			}
-
-			a.footer-link:hover:after,
-			a.footer-link:focus:after{
-				background: #FFD500;
-		    border-bottom: none;
-		    border-radius: 4px;
-		    font-size: .75em;
-		    font-weight: 600;
-				height: 12px;
-		    line-height: .75em;
-				padding: 6px 8px 3px;
-		    position: absolute;
-    		top: -28px;
-    	}
-
-			a.email:hover:after,
-			a.email:focus:after {
-				content: 'Email';
-				left: -26%;
-				right: -30%;
-			}
-
-			a.linkedin:hover:after,
-			a.linkedin:focus:after {
-				content: 'LinkedIn';
-				left: -50%;
-				right: -57%;
-    
-			}
-
-			a.footer-link:hover svg path{
-				fill: #FFD500;
-			}
-
-			a.footer-link:hover svg rect{
-				stroke: #FFD500;
-			}
 
 
 			@media only screen and (max-width: 600px) {
-			  body {
-			    align-items: flex-start;
-			  }
-
-			  .content-container {
-			  	margin-top: 0;
-			  }
-
+			 h1{
+			 	font-size:  5em;
+				font-weight:normal;
+				line-height: 100px;
+			 }
 			}
 		</style>
 	</head>
 	<body>
 		<div class="content-container">
-			<div class="img-container">
-				<img alt="Philip Wong thumbnail" class="profile" height="80" src="img/profile.png" width="80" />
-			</div>
+			
 			<h1>Philip Wong</h1>
 			<h2>Product Designer</h2>
-			<p>
-				Previously working at <a href="https://www.grammarly.com/" target="_blank">Grammarly</a> to shape the future of communication.
-			</p>
-			<p class="margin-l-bottom" style="display:none">
-				Previously I was solving billing &amp; collections problems for legal professionals at <a href="https://www.clio.com" target="_blank">Clio</a> to transform the legal experience for all.
-			</p>
-			<div class="icons-container">
-				<a class="footer-link email" href="mailto:pwon67@gmail.com">
-					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M20.8 11H11.2C10.54 11 10.006 11.5625 10.006 12.25L10 19.75C10 20.4375 10.54 21 11.2 21H20.8C21.46 21 22 20.4375 22 19.75V12.25C22 11.5625 21.46 11 20.8 11ZM20.56 13.6562L16.318 16.4188C16.126 16.5438 15.874 16.5438 15.682 16.4188L11.44 13.6562C11.29 13.5563 11.2 13.3875 11.2 13.2063C11.2 12.7875 11.638 12.5375 11.98 12.7562L16 15.375L20.02 12.7562C20.362 12.5375 20.8 12.7875 20.8 13.2063C20.8 13.3875 20.71 13.5563 20.56 13.6562Z" fill="#888888"/>
-						<rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#888888"/>
-					</svg>
-				</a>
-
-				<a class="footer-link linkedin" href="https://www.linkedin.com/in/philipwong67">
-					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M10 20.8136V12.8826H12.5691V20.8136H10Z" fill="#888888"/>
-						<path d="M10 10.3699C10 9.59229 10.5746 9 11.4535 9C12.3324 9 12.8736 9.59229 12.8903 10.3699C12.8903 11.1314 12.3324 11.7408 11.4365 11.7408H11.4201C10.5576 11.7408 10 11.1314 10 10.3699Z" fill="#888888"/>
-						<path d="M16.7262 14.1924C17.0672 13.6524 17.6779 12.8826 19.042 12.8826C20.7326 12.8826 22 14.0164 22 16.4524L21.9999 20.9998H19.4309V16.7567C19.4309 15.6909 19.0591 14.9637 18.1291 14.9637C17.4193 14.9637 16.9965 15.454 16.8108 15.9275C16.7429 16.0972 16.7262 16.3337 16.7262 16.5707V21H14.1568C14.1568 21 14.1906 13.8132 14.1568 13.069H16.7262V14.1924Z" fill="#888888"/>
-						<rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#888888"/>
-					</svg>
-				</a>
-			</div>
-			<a class="links resume margin-l-bottom" href="download/philip-wong-resume.pdf">View Resume</a>
-			<footer>December 2024.</footer>
+			<p>Ex-Grammarly, Clio and Best Buy Canada</p>
 		</div>
 	</body>
 </html>
