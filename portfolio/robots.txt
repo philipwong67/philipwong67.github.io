@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /wf/
+Disallow: /songela/
+Disallow: /mysphere360/
+Disallow: /maximizer/
+Disallow: /columbus/
+Disallow: /aquatic/
+Disallow: /ainsworth/
+Disallow: /THEME/
+
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://www.philipwong.ca/sitemap.xml
+

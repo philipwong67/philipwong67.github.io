@@ -1,0 +1,654 @@
+	/***************************
+
+	CSS Reset
+
+    ***************************/
+
+			html, body, div, span, 
+			h1, h2, h3, p, blockquote,
+			a, ol, ul, li,
+		 	figure, figcaption, footer, header, nav, 
+		 	section{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: bottom;
+				position: relative;
+			}
+			/* HTML5 display-role reset for older browsers */
+			figcaption, figure, 
+			footer, header, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+				-webkit-text-size-adjust: 100%;
+			}
+			ol, ul {
+				list-style: none;
+			}
+
+			@-ms-viewport{
+			  width: device-width;
+			}
+
+	/***************************
+
+	Typography
+
+    ***************************/
+
+		@font-face {
+		    font-family: 'Raleway';
+		    src: url('../fonts/raleway-extrabold-webfont.eot');
+		    src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+		         url('../fonts/raleway-extrabold-webfont.woff') format('woff'),
+		         url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'),
+		         url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+		    font-weight: 800;
+		}
+
+		@font-face {
+		    font-family: 'Raleway';
+		    src: url('../fonts/raleway-light-webfont.eot');
+		    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+		         url('../fonts/raleway-light-webfont.woff') format('woff'),
+		         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+		         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+		    font-weight: 300;
+		}
+
+		.headline{
+    		font:800 2.5rem/1.2 'Raleway', san-serif;
+    		margin-bottom:0.5rem;
+    	}
+
+	    h2, blockquote p{
+	    	font:800 2rem/1.2 'Raleway', san-serif;
+	    	margin-bottom:3vmin;
+	    }
+
+	    h2{
+	    	text-transform: uppercase;
+	    }
+
+	    h3{
+			font:800 1rem/1.8 'Raleway', san-serif;
+			text-transform:uppercase;
+			margin-bottom:1rem;
+		}
+
+		p, .listing li, .project-title{
+			font:300 1rem/1.8 'Raleway', san-serif;
+    		margin:0 0 1rem 0.1vw;
+    	}
+
+    	.footer-wrapper li{
+    		display:block;
+    		text-align: center;
+    	}
+
+    	.footer-wrapper li a{
+    		font:300 1rem/1.8 'Raleway', san-serif;	
+    		color:rgba(102,102,102,1);
+    		margin
+    	}
+
+    	.footer-wrapper li a:hover,
+	    .footer-wrapper li a:focus{
+	    	text-decoration: none
+	    }
+
+    	.hero-wrapper p, .project-title{
+    		line-height:1.6;
+    		margin-bottom:2rem;
+    	}
+
+    	.listing{
+    		padding-left:1.2rem;
+    	}
+    	.listing li{
+    		list-style-type: decimal;
+    		margin-bottom:0.5rem;
+    	}
+
+    	.project-label{
+			margin-bottom:.5rem;
+		}
+
+    	.project-title{
+    		margin-bottom:.5rem;
+    	}
+
+	    blockquote{
+	    	margin:0 0 3.2rem;
+	    	border-bottom:4px solid #eeeeee;
+	    	padding:0 0 3.4rem;
+	    }
+	  	
+		[class*='label']{
+			font:800 .75rem/1 'Raleway', san-serif;
+	    	text-transform: uppercase;
+		}
+
+		[class*='-caption']{
+			font:400 .75rem/1.4 'Raleway', san-serif;
+			display: block;
+			color:rgba(102,102,102,1);
+			clear:both;
+	    }
+
+	    a{
+	    	color:rgba(255,0,0,1);
+	    	text-decoration: none;
+	    	cursor: pointer;
+	    }
+
+	    a:hover, a:focus{
+	    	text-decoration: underline;
+	    	cursor:pointer;
+	    }
+
+
+	/***************************
+
+	Utility Styling
+
+    ***************************/
+    	strong{
+    		font-weight:800;
+    	}
+
+	    .black{
+			color:rgba(0,0,0,1) !important;
+		}
+
+		.pull-right{
+			float:right;
+		}
+
+		.no-margin-bottom{
+			margin-bottom:0 !important;
+		}
+	   	
+
+    /***************************
+
+	Layout 
+
+    ***************************/
+
+		[class*='wrapper']{
+			overflow:hidden;
+			background-size: cover;
+		}
+
+		[class*="content-wrapper"]{
+	    	padding:9vw;
+	    }
+
+	    .hero-wrapper{
+	    	color:rgba(255,255,255,1);
+	    }
+
+		.hero-wrapper .content-wrapper{
+	    	padding-top:15vw;
+	    	padding-bottom:16vw;
+	    }
+
+	    .footer-wrapper {
+	    	background:rgba(35,35,35,1);
+	    }
+
+	    .footer-wrapper .content-wrapper{
+	    	padding-top:2rem;
+	    	padding-bottom:2rem;
+	    }
+
+	/***************************
+
+	Menu Section
+
+    ***************************/	
+
+		[class*='nav-content-wrapper']{
+			padding-top:4rem;
+			padding-bottom:2rem;
+			overflow: visible;
+		}
+
+		[class*='nav-content-wrapper-label'] a:hover{
+			text-decoration: none
+		}
+
+		.menu-list{
+			background:rgba(0,0,0,1);
+			height:480px;
+		    left:0;
+		    top:4.75rem;
+		    width: 100%;
+		}
+
+		.menu-list.menu-open-wrapper li{
+			text-align: right;
+		    margin-bottom: 3rem;
+		    font: 400 2rem/1 'Raleway', Serif;
+		    text-transform: none;
+		}
+
+		.menu-list,
+		.message-menu.menu-open-wrapper,
+		.message-close{
+			display:none;
+		}
+
+		.body-wrapper.menu-open-wrapper{
+			z-index:-1;
+			height:0;
+		}
+
+		.message-close.menu-open-wrapper,
+		.menu-list.menu-open-wrapper	{
+	    	display:inline;
+	    }
+
+
+	/***************************
+
+	Projects Section
+
+    ***************************/
+
+		[class*='project-wrapper']{
+			display:block;
+			background-color: rgba(0,0,0,1);
+			color:rgba(255,255,255,1);
+		}
+
+	    .project-wrapper{
+			width:50%;
+			height:calc(50vw - 8px);
+			float:left;
+		}
+
+		.project-thumbnail {
+			width: 100%;
+			height:auto;
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
+
+		[class*='project-wrapper']:hover .project-thumbnail,
+		[class*='project-wrapper'].hover .project-thumbnail,
+		[class*='project-wrapper']:focus .project-thumbnail{
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.project-desc{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0,0.85);
+			height: 83%;
+			width: 83%;
+			/*make it open for now*/
+			opacity: 0;
+			visibility: hidden;
+			padding:9%;
+			-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+			-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+			transition: transform 0.5s, opacity 0.5s;
+		}
+
+		.project-wrapper:hover .project-desc,
+		.project-wrapper:focus .project-desc{
+			opacity: 1;		
+			visibility: visible;
+		}
+
+	/***************************
+
+	SlideShow Section
+
+	***************************/
+
+		.flickity-enabled {
+		  position: relative;
+		}
+
+		.flickity-enabled:focus { 
+			outline: none; 
+		}
+
+		.flickity-viewport {
+		  overflow: hidden;
+		  position: relative;
+		  height: 100%;
+		}
+
+		.flickity-slider {
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		}
+
+		/* draggable */
+
+		.flickity-enabled.is-draggable {
+		  -webkit-tap-highlight-color: transparent;
+		          tap-highlight-color: transparent;
+		  -webkit-user-select: none;
+		     -moz-user-select: none;
+		      -ms-user-select: none;
+		          user-select: none;
+		}
+
+		.flickity-enabled.is-draggable .flickity-viewport {
+		  cursor: move;
+		  cursor: -webkit-grab;
+		  cursor: grab;
+		}
+
+		.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+		  cursor: -webkit-grabbing;
+		  cursor: grabbing;
+		}
+
+		/* ---- page dots ---- */
+
+		.flickity-page-dots {
+		  margin:1rem 9vw 0;
+		  line-height: 1;
+		}
+
+		.flickity-rtl .flickity-page-dots { 
+			direction: rtl; 
+		}
+
+		.flickity-page-dots .dot {
+		  display: inline-block;
+		  width: 3rem;
+		  height: 4px;
+		  margin: 0 1rem 0 0;
+		  background: rgba(0,0,0,0.25);
+		  cursor: pointer;
+		}
+
+		.flickity-page-dots .dot.is-selected {
+		   background: rgba(255,0,0,1);
+		}
+
+		.gallery-cell{
+			height:auto;
+			width:100%;
+		}
+
+		.gallery-cell img{
+			width:100%;
+		}
+
+	/***************************
+
+	In paragraph Images Layout
+
+    ***************************/
+
+	    .images-wrapper {
+	    	margin-bottom:2rem;
+	    }
+
+	    .images-wrapper img{
+	    	width: calc(50% - 0.5rem);
+	    	float:left;
+	    	margin:0 1rem 1rem 0;
+	    }
+
+	    .full-images img{
+	    	width:100%;
+	    }
+
+	    .images-wrapper img:nth-child(2n) {
+		    margin-right: 0;
+		}
+
+		.images-wrapper .images-label{
+			clear:both;
+		}
+
+	/***************************
+
+	Video Wrappers
+
+    ***************************/
+    
+	    .video-wrapper{
+	    	position: relative;
+		    padding-bottom: 56.25%;
+		    height: 0;
+	    }
+
+	    .video-wrapper iframe{
+	    	position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+	    }
+
+		.inline-block{
+			display:inline-block;
+		}
+
+@media only screen and (max-width : 569px) {
+
+	.bestbuy blockquote p,
+	.futureshop blockquote p{
+		font: 800 1rem/1.8 'Raleway', san-serif;
+	}
+
+}
+
+@media only screen and (min-width : 569px) {
+
+	/***************************
+
+	Projects Thumbnails
+
+    ***************************/
+
+	.project-wrapper{
+		height:33.3333vw;
+	}
+	
+	.project-thumbnail {
+		/*margin-top:-8.3333vw;*/
+	}
+
+
+}
+
+
+@media (min-width : 768px) {
+	
+	.headline{
+    	font-size:3.6rem;
+    }
+
+    h3, p, .listing li, .project-title{
+		font-size:1.2rem;
+	}
+
+	.footer-wrapper ul{
+		text-align:center;
+	}
+
+	.footer-wrapper li{
+		display:inline-block;
+		margin-right:2.4rem;
+	}
+
+	.footer-wrapper li a:hover,
+    .footer-wrapper li a:focus{
+    	border-bottom:4px solid #666666;
+    }
+
+	p{
+		max-width:90%;
+		margin-bottom:1.8rem;
+	}
+
+	/***************************
+
+	Layout
+
+    ***************************/
+
+    .footer-wrapper .content-wrapper {
+    	padding-top: 2vw;
+    	padding-bottom: 2vw;
+	}
+	
+	/***************************
+
+	Navigation Wrapper for Header & Footer
+
+    ***************************/
+
+	.nav-content-wrapper-label{
+		padding-top:9vw;
+	}
+
+	
+	.nav-content-wrapper-label a:hover,
+	.nav-content-wrapper-label a:focus{
+		border-bottom:4px solid #FF0000;
+		text-decoration:none;
+	}
+
+	/***************************
+	Menu Flyout
+	***************************/
+
+		#menu-button{
+			display:none;
+		}
+
+		.menu-list,
+		.menu-list li{
+			display:inline-block;
+		}
+
+		.menu-list li,
+		.menu-list.menu-open-wrapper li{
+			margin-left:2rem;
+			margin-bottom:0;
+			font: 800 .75rem/1 'Raleway', serif;
+		}
+
+		.menu-list{
+			background: none;
+			height: auto;
+			top: 0;
+			position: relative;
+			padding-top: 0;
+			border-top: 0;
+			width: auto;
+		}
+
+		.menu-list.menu-open-wrapper li a{
+			font:800 .75rem/1 'Raleway', san-serif;
+	    	text-transform: uppercase;
+	    	padding:0;
+	    	display:inline;
+	    	text-align: left;
+		}
+
+		.menu-open-wrapper{
+			overflow: visible
+		}
+
+		.body-wrapper.menu-open-wrapper{
+			display:block;
+			overflow:hidden;
+			z-index: 0;
+    		height: auto;
+		}
+	
+	/***************************
+
+	In paragraph Images Layout
+
+    ***************************/
+
+	.images-wrapper{
+    	width:82vw;
+    	margin:1.4rem 0 6rem;
+    }
+
+    .images-wrapper img{
+    	float:left;
+    	width:auto;
+    	margin:0 1.8rem 1.8rem 0;
+    }
+
+    .images-wrapper img:nth-child(2n) {
+	    margin-right: 1.8rem;
+	}
+
+	.images-wrapper img:nth-last-child(-n+2) {
+	    margin-bottom: 1.8rem;
+	}
+
+}
+
+@media (min-width : 1025px){
+	
+	.headline{
+    	font-size:6vw;
+	}
+
+    .hero-wrapper p, .project-title{
+    	font-size:1.8vw;	
+    }
+
+    p{
+    	max-width:70%;
+    }
+
+    blockquote{
+    	margin-right:30%;
+    }
+
+    blockquote p{
+    	max-width:100%;
+    	line-height:1.6;
+    }
+
+	#content .content-wrapper{
+		padding-right:34vw;
+		min-width:58rem;
+	}
+
+	/***************************
+
+	Project Wrapper
+
+    ***************************/
+
+    .project-wrapper{
+    	height:23vw;
+	}
+
+    .home-projects-wrapper .project-wrapper{
+		width:33.3333%;
+	}
+
+}
+
