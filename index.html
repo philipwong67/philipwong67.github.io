@@ -10,28 +10,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=DM+Serif+Display&display=swap" rel="stylesheet">
 		<style>
 
-			body{
-				align-items: center;
-				background: #0A574E;
-				color: #FCF5F0;
-		    	display: flex;
-				justify-content: center;
-				text-align:center;
-				flex-direction: column;
-			}
-
-			.content-container {
-				width:100vw;
-				height:100vh;
-				align-content:center;
-			}
-
-			.contact {
-				background:#FCF5F0;
-				color:#1A1A1A;
-				width:100%;
-			}
-
 			* {
 				font-family: 'DM Sans', sans-serif;
 				font-weight: normal;
@@ -45,66 +23,304 @@
 				color:#1a1a1a;
 			}
 
-			h1 {
-				font-size:  8em;
-				font-weight:normal;
-				line-height: 140px;
-				font-family: 'DM Serif Display', serif;
-				letter-spacing: -1px;
-				margin-bottom:32px;
-				margin-top:32px;
+			.cover-container{
+				align-items: center;
+				background: #0A574E;
+				color: #FCF5F0;
+		    	display: flex;
+				justify-content: center;
+				text-align:center;
+				flex-direction: column;
+				width:100vw;
+				height:100vh;
 			}
 
 			
-			h2, p {
+			body{
+				background:#FCF5F0;
+			}
+
+
+			.about{
+	background:#F9EBE2;
+	border-radius: 8px;
+	align-content:center;
+
+}
+
+			*
+
+			h1 {
+				font-size:  8em;
+				font-weight:normal;
+				line-height: 1.0975;
+				font-family: 'DM Serif Display', serif;
+				letter-spacing: -1px;
+				margin-bottom:0.25em;
+				margin-top:0.25em;
+				text-shadow: 0px 0.125em 0.3125em rgba(26, 26, 26, 0.4)
+			}
+
+			h2 {
+			    color: #0A574E;
+			    font-size: 4em;
+			    line-height:1.375;
+			    margin-bottom: 1.33em;
+			    font-family: 'DM Serif Display', serif;
+			    letter-spacing: -1px;
+			}
+
+.cover-container h3{
+	margin-bottom:2em;
+}
+
+			
+			p {
 				font-size:24px;
 				line-height:32px;
 				font-weight:100;
 				font-optical-sizing: auto;
 			}
 
-			h2{
-				
-				font-weight: 500;
-				color:#FFC400;
+			
+
+			h3{
+				font-size: 2em;
+				line-height:3em;
 			}
+
+			.buzz-word {
+				font-size;44px;
+				line-height:60px;
+			}
+
 
 			
 
 
-			@media only screen and (max-width: 600px) {
-			 body{
-			 	text-align:left;
-			 }
 
-			 h1{
-			 	font-size:  4em;
-				line-height: 80px;
-				margin-top:16px;
-			 }
 
-			 h2, p{
-			 	font-size:20px;
-			 	line-height:28px;
-			 }
 
-			 .content-container{
-			 	padding:20px;
-			 }
-			}
+
+.aboutme{
+	text-align: left;
+
+}
+
+.aboutme ul li{
+	font-size:2.75em;
+	line-height:3.75em;
+	font-weight:600;
+	color:#1a1a1a;
+	list-style-type: none;
+	margin:0;
+}
+	
+
+			
+
+
+.container {
+    display: flex;
+    /*height: calc(100vh - 80px);*/
+    margin:3em;
+    column-gap:3em;
+    justify-content: center;
+
+}
+
+.container section{
+	display:flex;
+	flex: 1;
+	padding:4em;
+	flex-direction: column;
+	max-width:46.25em;
+}
+
+/* Left Section - About Me */
+.about {
+    /*background-color: #fdece0;*/
+    background-color: #0A574E;
+   
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.about h2, .about p{
+	color:#FCF5F0;
+}
+
+
+.about ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    border-top: 4px solid #53867F;
+    display:inline-flex;
+    flex-direction: column;
+}
+
+.about li {
+/*	color:#61554D;*/
+	color:#FFC400;;
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height:1.4;
+    padding:0.9090em 0;
+/*    border-bottom: 4px solid #FCF5F0;*/
+    border-bottom: 4px solid #53867F;
+}
+
+
+
+/* Right Section - Experience */
+.experience {
+
+}
+
+
+
+.job {
+    margin-bottom: 4em;
+}
+
+.job:last-child,
+p:last-child {
+    margin-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2em;
+    line-height:1.5;
+    font-weight: 600;
+}
+
+.job span {
+    font-size: 1.5em;
+    line-height:1.33;
+    font-weight:300;
+}
+
+p {
+    font-size: 1.5em;
+    line-height:1.33;
+    margin-bottom: 1.5em;
+    font-weight:400;
+}
+
+.resume{
+	font-size: 1.5em;
+line-height:1.5;    
+    border: 2px solid #ffc400;
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 0.25em 1em 0.25em 1em;
+    color: #1a1a1a;
+    display:block;
+    font-weight:600;
+    background:#ffc400;
+}
+
+.resume:hover{
+	background:#53867F;
+	color:#FCF5F0;
+	border-color:#53867F;
+	position: relative;
+	top:1px;
+	left:1px;
+	box-shadow: 0px 0.125em 0.3125em rgba(26, 26, 26, 0.4)
+}
+
+@media only screen and (max-width: 1400px) {
+  * {
+   font-size:12px; 
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  * {
+   font-size:8px; 
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .container {
+  	display:block;
+	}
+  .container section {
+	margin:auto;
+	max-width:860px;		
+	}
+
+	.container section h2{
+		margin-bottom: 0.86em;
+	}
+}
+
+/
 		</style>
 	</head>
 	<body>
-		<div class="content-container">
-			
+		<div class="cover-container">
 			<h1>Philip Wong</h1>
-			<h2>Product Designer</h2>
+			<h3>Product Designer</h3>
+			<div class="">
+				<a class="resume" href="file:///Users/philipwong/Documents/GitHub/philipwong67.github.io/download/Philip-Wong-Portfolio-2025.pdf">View Portfolio</a>
+			</div>
+			<div class="learnmore">
+			</div>
 		</div>
-		<!--<div class="content-container contact">
-			
-			<h1>two</h1>
-			<h2>Product Designer</h2>
-			<p>Ex-Grammarly, Clio and Best Buy Canada</p>
-		</div>-->
+		<!--<div class="container">
+	        <section class="about">
+	            <div>
+	            	<h2>About me</h2>
+	            <ul>
+	                <li>Navigate through ambiguity</li>
+	                <li>Uncover the “why”</li>
+	                <li>Build 0–1 for B2B & B2C</li>
+	                <li>Deliver meaningful impact</li>
+	            </ul>
+	        </div>
+	            <p class="location">Based in Vancouver, Canada</p>
+	        </section>
+        
+	        <section class="experience">
+	            <h2>Experience</h2>
+	            
+	            <div class="job">
+	                <div class="job-header">
+	                    <h3>Grammarly</h3>
+	                    <span>2022–2024</span>
+	                </div>
+	                <p>Senior Product Designer</p>
+	                <p>Demonstrated the impact of Grammarly’s AI writing tools on enterprise accounts, scaling seat expansion volume by 10× from tens to hundreds.</p>
+	            </div>
+
+	            <div class="job">
+	                <div class="job-header">
+	                    <h3>Clio</h3>
+	                    <span>2016–2022</span>
+	                </div>
+	                <p>Staff Product Designer, 2021 – 2022</p>
+	                <p>Led iterative improvements to Clio’s payment platform, increasing active payment accounts by 260% over three years.</p>
+	            </div>
+
+	            <div class="job">
+	                <div class="job-header">
+	                    <h3>Best Buy Canada</h3>
+	                    <span>2011–2016</span>
+	                </div>
+	                <p>Visual Design Lead, 2015 – 2016</p>
+	                <p>Designed a seamless online shopping experience for Best Buy Canada’s peak events, driving $70M+ CAD in revenue.</p>
+	            </div>
+	        </section>
+    	</div>-->
+		
 	</body>
 </html>
